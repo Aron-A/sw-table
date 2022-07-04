@@ -69,7 +69,7 @@ class AnimalTableViewController: UITableViewController, UISearchBarDelegate {
         if editingStyle == .delete {
             
             print(indexPath.row)
-            self.animals.remove(at: indexPath.row)
+            self.filterData.remove(at: indexPath.row)
             self.tableView.deleteRows(at: [indexPath], with: .fade)
             
         } else if editingStyle == .insert {
